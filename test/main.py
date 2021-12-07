@@ -40,8 +40,8 @@ if __name__ == '__main__':
 	test_loader = torch.utils.data.DataLoader(dataset, **test_kwargs)
 
 	trained_path = "../train/mnist_cnn.pt"
-	#model = Net().to(device)
-	model = CustomNet().to(device)
+	model = Net().to(device)
+	#model = CustomNet().to(device)
 	model.load_state_dict(torch.load(trained_path))
 
 	test(model, device, test_loader)
