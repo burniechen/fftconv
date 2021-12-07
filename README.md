@@ -1,24 +1,28 @@
 FFTConv
 ===
-# env
-1. python = 3.8.10
-2. pytorch = 1.10.0+cu113
-
-# train model
+# Env.
+```=
+python = 3.8.10
+pytorch = 1.10.0+cu113
 ```
+
+# Train model
+```=
 python3 train/main.py --save-model
 ```
-# test model
-```
+# Test model
+```=
 python3 test/main.py
 ```
 
-# expected folers
+# Expected dir.
+```=
 fftconv
 |__ data/
 |__ train/
-	|__ main.py	
-	|__ mnist_cnn.pt
+    |__ main.py
+    |__ mnist_cnn.pt
 |__ test/
-	|__ main.py
-	|__ net.py
+    |__ main.py
+    |__ net.py
+```
