@@ -35,13 +35,13 @@ if __name__ == '__main__':
 	transform=transforms.Compose([
 		transforms.ToTensor(),
 		transforms.Normalize((0.1307,), (0.3081,))
-	])
+		])
 	dataset = datasets.MNIST('../data', train=False, transform=transform)
 	test_loader = torch.utils.data.DataLoader(dataset, **test_kwargs)
 
 	trained_path = "../train/mnist_cnn.pt"
-	model = Net().to(device)
-	#model = CustomNet().to(device)
+	#model = Net().to(device)
+	model = CustomNet().to(device)
 	model.load_state_dict(torch.load(trained_path))
 
 	test(model, device, test_loader)
