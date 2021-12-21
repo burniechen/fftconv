@@ -3,6 +3,8 @@
 
 ### Custom ###
 data/
+mnist_cnn/train/mnist_cnn.pt
+vgg16_cnn/train/vgg16_cnn.pt
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
